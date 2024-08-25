@@ -82,6 +82,27 @@ void loop() {
 }
 ```
 
+## Rumus 🧮
+
+### Menghitung Konsentrasi CO2
+Konsentrasi CO2 (PPM) dihitung dengan rumus:
+
+    PPM_CO2 = A_CO2 * (R_S / R0) ^ B_CO2
+
+- `A_CO2` dan `B_CO2` adalah konstanta kalibrasi untuk CO2.
+- `R_S` adalah resistansi sensor saat ini.
+- `R0` adalah resistansi sensor pada konsentrasi CO2 standar.
+
+### Menghitung Konsentrasi CO
+Konsentrasi CO (PPM) dihitung dengan rumus:
+
+    PPM_CO = A_CO * (R_S / R0) ^ B_CO
+
+- `A_CO` dan `B_CO` adalah konstanta kalibrasi untuk CO.
+- `R_S` adalah resistansi sensor saat ini.
+- `R0` adalah resistansi sensor pada konsentrasi CO standar.
+
+
 Membaca data sensor, menghitung PPM untuk CO2 dan CO, serta mencetak konsentrasi rata-rata ke Serial Monitor.
 
 ## Catatan Kalibrasi 📝
